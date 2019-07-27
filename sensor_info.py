@@ -27,6 +27,7 @@ if __name__ == '__main__':
       percent       - 剩余电量
       secsleft      - 电量剩余秒数，如果接通电源，被设置为psutil.POWER_TIME_UNLIMITED，如果不能确定则被设置为psutil.POWER_TIME_UNKNOWN
       power_plugged - 是否连接电源适配器,如果不能确定则返回None
-    """
+    支持系统：Linux Windows FreeBSD
+     """
     print('电池信息:', psutil.sensors_battery())
 
